@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frutas y verduras | Santa isabel</title>
+    <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Logo_Santa_Isabel_Cencosud.png/120px-Logo_Santa_Isabel_Cencosud.png">
+
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+  <div class="principal">
+    <nav>
+        <div class="logo">
+                <a href="index.html">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Logo_Santa_Isabel_Cencosud.png" alt="imagen no encontrada">
+                </a>
+        </div>
+            <form class="search-form">
+                <input type="text" placeholder="¿Que estas buscando?">
+                <button type="submit"><img src="https://img2.freepng.es/20180320/che/kisspng-magnifying-glass-computer-icons-search-box-icon-search-drawing-icon-5ab0b21cf09ab2.0358352915215293729855.jpg" width="30" height="30"></button>
+            </form>
+            <div class="login">
+                <a href="registrar_cuenta.html">Registrate</a>
+                <a href="iniciar_session.html">Ingresar</a>
+            </div>  
+        <div class="container-fluid">
+            <a class="navbar-brand text-white">carrito</a>
+            <button class="btn btn-danger me-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                  <!-- <i class="fa fa-c"></i> -->
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <strong>$$$</strong>
+              </button>
+          </div>     
+    </nav>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">Carrito de compra</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Imagen</th>
+              <th scope="col">Precio</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody id="carrito-producto">
+            <tr>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+          </tbody>
+        </table>
+
+
+        <div class="d-grid gap-2">
+            <button class="btn btn-success btn-lg" type="button">
+                Enviar compra a wsp <i class="fa-brands fa-whatsapp"></i> $ <span id="carrito-precio">0</span>
+            </button>
+        </div>
+
+    </div>
+</div>
+
+    <div class="subtitulos">
+        <nav class="navbar-black">
+            <div class="nav-container">
+              
+                <a href="Oferta.html" class="nav-item1">Ofertas</a>
+              <div class="separator"></div>
+              
+              <a href="carniceria.html" class="nav-item">Carnisería</a>
+              <div class="separator"></div>
+              
+              <a href="FyV.html" class="nav-item">Frutas y verduras</a>
+              
+              <div class="separator"></div>
+              
+              <div class="nav-item">
+                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#miModal">Acerca de ...</a>
+              </div>
+              <div class="modal fade" id="miModal" tabindex="-1" aria-labelledby="miModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="miModalLabel">Nuetra Empresa:</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>nuestra empresa es muy prestigiosa . Capaz de ser mundialmente reconocida.
+                        estamos trabajando para dar siempre los mejores servicios a todos nuestros 
+                        queridos clientes . Esperamos agradecidamente que quede Gusto con 
+                        Nuestros Productos...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              
+            </div>
+          </nav>
+          
+    </div>
+
+
+</div>
+
+
+    <div class="album py-5 bg-body-tertiary">
+      <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+              <div class="card shadow-sm"
+                  id="producto-10"
+                  data-img="https://santaisabel.vtexassets.com/arquivos/ids/169527-280-280?width=280&height=280&aspect=true"
+                  data-nombre="platano granel "
+                  data-precio="$$1.490 x kg"
+                  >
+                  <img class="bd-placeholder-img card-img-top"  width="100" src="https://santaisabel.vtexassets.com/arquivos/ids/169527-280-280?width=280&height=280&aspect=true" alt="" srcset="">
+                  <div class="card-body">
+                      <p class="card-text">Plátano granel</p>
+                      <p class="text-danger">$$1.490 x kg</p>
+                      <div class="d-grid gap-2">
+                          <button class="btn btn-primary" type="button" id="btnComprar" onclick="comprar(10)">Comprar</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+       
+          <div class="col">
+              <div class="card shadow-sm"
+                  id="producto-11"
+                  data-img="https://santaisabel.vtexassets.com/arquivos/ids/174082-280-280?width=280&height=280&aspect=true"
+                  data-nombre="Piña un"
+                  data-precio="$2.390"
+              >
+                  <img class="bd-placeholder-img card-img-top" width="100" src="https://santaisabel.vtexassets.com/arquivos/ids/174082-280-280?width=280&height=280&aspect=true" alt="" srcset="">
+                  <div class="card-body">
+                      <p class="card-text">Piña un</p>
+                      <p class="text-danger">$2.390</p>
+                      <div class="d-grid gap-2">
+                          <button class="btn btn-primary" type="button" onclick="comprar(11)">Comprar</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col">
+              <div class="card shadow-sm"
+                  id="producto-12"
+                  data-img="https://santaisabel.vtexassets.com/arquivos/ids/190987-280-280?width=280&height=280&aspect=true"
+                  data-nombre="Pera Packham's."
+                  data-precio="$1.990 x kg"
+              >
+                  <img class="bd-placeholder-img card-img-top" width="100" src="https://santaisabel.vtexassets.com/arquivos/ids/190987-280-280?width=280&height=280&aspect=true" alt="" srcset="">
+                  <div class="card-body">
+                      <p class="card-text">Pera Packham's granel.</p>
+                      <p class="text-danger">$1.990 x kg</p>
+                      <div class="d-grid gap-2">
+                          <button class="btn btn-primary" type="button" onclick="comprar(12)">Comprar</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col">
+              <div class="card shadow-sm"
+                  id="producto-13"
+                  data-img="https://santaisabel.vtexassets.com/arquivos/ids/169521-280-280?width=280&height=280&aspect=true"
+                  data-nombre="Champiñón bandeja"
+                  data-precio="$1.590"
+              >
+                  <img class="bd-placeholder-img card-img-top" width="100" src="https://santaisabel.vtexassets.com/arquivos/ids/169521-280-280?width=280&height=280&aspect=true" alt="" srcset="">
+                  <div class="card-body">
+                      <p class="card-text">Champiñón bandeja 200 g</p>
+                      <p class="text-danger">$1.590</p>
+                      <div class="d-grid gap-2">
+                          <button class="btn btn-primary" type="button" onclick="comprar(13)">Comprar</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col">
+              <div class="card shadow-sm"
+                  id="producto-14"
+                  data-img="https://santaisabel.vtexassets.com/arquivos/ids/161025-280-280?width=280&height=280&aspect=true"
+                  data-nombre="Cilantro paquete"
+                  data-precio="$5.750 x kg"
+              >
+                  <img class="bd-placeholder-img card-img-top" width="100" src="https://santaisabel.vtexassets.com/arquivos/ids/161025-280-280?width=280&height=280&aspect=true" alt="" srcset="">
+                  <div class="card-body">
+                      <p class="card-text">Cilantro paquete 120 g</p>
+                      <p class="text-danger">$5.750 x kg</p>
+                      <div class="d-grid gap-2">
+                          <button class="btn btn-primary" type="button" onclick="comprar(14)">Comprar</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col">
+              <div class="card shadow-sm"
+                  id="producto-15"
+                  data-img="https://santaisabel.vtexassets.com/arquivos/ids/210564-280-280?width=280&height=280&aspect=true"
+                  data-nombre="Lechuga escarola bandeja"
+                  data-precio="$1.990"
+              >
+                  <img class="bd-placeholder-img card-img-top" width="100" src="https://santaisabel.vtexassets.com/arquivos/ids/210564-280-280?width=280&height=280&aspect=true" alt="" srcset="">
+                  <div class="card-body">
+                      <p class="card-text">Lechuga escarola bandeja</p>
+                      <p class="text-danger">$1.990</p>
+                      <div class="d-grid gap-2">
+                          <button class="btn btn-primary" type="button" onclick="comprar(15)">Comprar</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col">
+              <div class="card shadow-sm"
+                  id="producto-16"
+                  data-img="https://santaisabel.vtexassets.com/arquivos/ids/162934-280-280?width=280&height=280&aspect=true"
+                  data-nombre="Tomate granel"
+                  data-precio="$1.890 x kg"
+              >
+                  <img class="bd-placeholder-img card-img-top" width="100" src="https://santaisabel.vtexassets.com/arquivos/ids/162934-280-280?width=280&height=280&aspect=true" alt="" srcset="">
+                  <div class="card-body">
+                      <p class="card-text">Tomate granel</p>
+                      <p class="text-danger">$1.890 x kg</p>
+                      <div class="d-grid gap-2">
+                          <button class="btn btn-primary" type="button" onclick="comprar(16)">Comprar</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col">
+              <div class="card shadow-sm"
+                  id="producto-17"
+                  data-img="https://santaisabel.vtexassets.com/arquivos/ids/169524-280-280?width=280&height=280&aspect=true"
+                  data-nombre="Limón malla"
+                  data-precio="$2.190"
+              >
+                  <img class="bd-placeholder-img card-img-top" width="100" src="https://santaisabel.vtexassets.com/arquivos/ids/169524-280-280?width=280&height=280&aspect=true" alt="" srcset="">
+                  <div class="card-body">
+                      <p class="card-text">Limón malla 1 kg</p>
+                      <p class="text-danger">$2.190</p>
+                      <div class="d-grid gap-2">
+                          <button class="btn btn-primary" type="button" onclick="comprar(17)">Comprar</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col">
+              <div class="card shadow-sm"                
+                  id="producto-18"
+                  data-img="https://santaisabel.vtexassets.com/arquivos/ids/267611-280-280?width=280&height=280&aspect=true"
+                  data-nombre="Palta Hass"
+                  data-precio="5.790 x kg"
+              >
+                  <img class="bd-placeholder-img card-img-top" width="100px" src="https://santaisabel.vtexassets.com/arquivos/ids/267611-280-280?width=280&height=280&aspect=true" alt="" srcset="">
+                  <div class="card-body">
+                      <p class="card-text">Palta Hass Extra Chilena granel</p>
+                      <p class="text-danger">$5.790 x kg</p>
+                      <div class="d-grid gap-2">
+                          <button class="btn btn-primary" type="button" onclick="comprar(18)">Comprar</button>
+                      </div>
+                      
+                  </div>
+              </div>
+          </div>
+          
+      </div>
+      </div>
+  </div>
+
+
+    <div class="bg-dark py-2 custom-navbarbarranegra">
+        
+    </div>
+
+
+    <script src="js.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>  
+    <script>
+
+      var array_productos = [];
+
+      if (localStorage.getItem('PRODUCTOS')) {
+          array_productos = JSON.parse(localStorage.getItem('PRODUCTOS')) || [];
+      }
+
+      function comprar(id) {
+          // alert(id);
+          var producto = $('#producto-' + id);
+
+          var p = {
+              id: id,
+              img: producto.data('img'),
+              nombre: producto.data('nombre'),
+              precio: producto.data('precio')
+          };
+
+          array_productos.push(p);
+
+          console.log(array_productos);
+
+          localStorage.setItem('PRODUCTOS', JSON.stringify(array_productos));
+
+          llenar_carrtio();
+      }
+
+      function llenar_carrtio() {
+          $('#carrito-producto').html('');   
+          var texto = '';
+          var total = 0;
+          array_productos.forEach(producto => {
+              // console.log(producto);
+              texto = texto + `
+              <tr>
+                <td><img src="${producto.img}" width="50px"></td>
+                <td>${producto.nombre}</td>
+                <td>$${producto.precio}</td>
+              </tr>
+              `;
+
+              total += producto.precio;
+          });
+
+          $('#carrito-producto').append(texto);         
+          $('#carrito-precio').html(total);        
+      }
+  </script>
+</body>
+</html>

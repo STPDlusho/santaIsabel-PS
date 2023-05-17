@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oferta | Santa isabel</title>
+    <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Logo_Santa_Isabel_Cencosud.png/120px-Logo_Santa_Isabel_Cencosud.png">
+
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="principal">
+    <nav>
+        <div class="logo">
+                <a href="index.html">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Logo_Santa_Isabel_Cencosud.png" alt="imagen no encontrada">
+                </a>
+        </div>
+            <form class="search-form">
+                <input type="text" placeholder="¿Que estas buscando?">
+                <button type="submit"><img src="https://img2.freepng.es/20180320/che/kisspng-magnifying-glass-computer-icons-search-box-icon-search-drawing-icon-5ab0b21cf09ab2.0358352915215293729855.jpg" width="30" height="30"></button>
+            </form>
+            <div class="login">
+                <a href="registrar_cuenta.html">Registrate</a>
+                <a href="iniciar_session.html">Ingresar</a>
+            </div>  
+        <div class="container-fluid">
+            <a class="navbar-brand text-white">carrito</a>
+            <button class="btn btn-danger me-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                  <!-- <i class="fa fa-c"></i> -->
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <strong>$$$</strong>
+              </button>
+          </div>     
+    </nav>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">Carrito de compra</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Imagen</th>
+              <th scope="col">Precio</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody id="carrito-producto">
+            <tr>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+          </tbody>
+        </table>
+
+
+        <div class="d-grid gap-2">
+            <button class="btn btn-success btn-lg" type="button">
+                Enviar compra a wsp <i class="fa-brands fa-whatsapp"></i> $ <span id="carrito-precio">0</span>
+            </button>
+        </div>
+
+    </div>
+</div>
+
+    <div class="subtitulos">
+        <nav class="navbar-black">
+            <div class="nav-container">
+              
+                <a href="Oferta.html" class="nav-item1">Ofertas</a>
+              <div class="separator"></div>
+              
+              <a href="carniceria.html" class="nav-item">Carnisería</a>
+              <div class="separator"></div>
+              
+              <a href="FyV.html" class="nav-item">Frutas y verduras</a>
+              
+              <div class="separator"></div>
+              
+              <div class="nav-item">
+                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#miModal">Acerca de ...</a>
+              </div>
+              <div class="modal fade" id="miModal" tabindex="-1" aria-labelledby="miModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="miModalLabel">Nuetra Empresa:</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>nuestra empresa es muy prestigiosa . Capaz de ser mundialmente reconocida.
+                        estamos trabajando para dar siempre los mejores servicios a todos nuestros 
+                        queridos clientes . Esperamos agradecidamente que quede Gusto con 
+                        Nuestros Productos...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              
+            </div>
+          </nav>
+          
+    </div>
+
+
+</div>
+
+    <div class="productos">
+        <br>
+        <h3>Productos en Oferta</h3>
+        
+        <div class="album py-5 bg-body-tertiary">
+          <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+              <div class="col">
+                  <div class="card shadow-sm"
+                      id="producto-19"
+                      data-img="https://santaisabel.vteximg.com.br/arquivos/ids/262517-280-280?width=280&height=280&aspect=true"
+                      data-nombre="Cerveza Kunstmann A."
+                      data-precio="$7.600"
+                      >
+                      <img class="bd-placeholder-img card-img-top"  width="100" src="https://santaisabel.vteximg.com.br/arquivos/ids/262517-280-280?width=280&height=280&aspect=true" alt="" srcset="">
+                      <div class="card-body">
+                          <p class="card-text">Pack 4 un. Cerveza Kunstmann Arándano 4.8° botella 330 cc</p>
+                          <p class="text-danger">$7.600</p>
+                          <div class="d-grid gap-2">
+                              <button class="btn btn-primary" type="button" id="btnComprar" onclick="comprar(19)">Comprar</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+           
+              <div class="col">
+                  <div class="card shadow-sm"
+                      id="producto-20"
+                      data-img="https://santaisabel.vteximg.com.br/arquivos/ids/208521-280-280?width=280&height=280&aspect=true"
+                      data-nombre="Vino Diablo Red"
+                      data-precio="$7.990"
+                  >
+                      <img class="bd-placeholder-img card-img-top" width="100" src="https://santaisabel.vteximg.com.br/arquivos/ids/208521-280-280?width=280&height=280&aspect=true" alt="" srcset="">
+                      <div class="card-body">
+                          <p class="card-text">Vino Diablo Red Ensamblaje 750 cc</p>
+                          <p class="text-danger">$7.990</p>
+                          <div class="d-grid gap-2">
+                              <button class="btn btn-primary" type="button" onclick="comprar(20)">Comprar</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="col">
+                  <div class="card shadow-sm"
+                      id="producto-21"
+                      data-img="https://santaisabel.vteximg.com.br/arquivos/ids/177720-280-280?width=280&height=280&aspect=true"
+                      data-nombre="Vino Carmenere"
+                      data-precio="$8.650"
+                  >
+                      <img class="bd-placeholder-img card-img-top" width="100" src="https://santaisabel.vteximg.com.br/arquivos/ids/177720-280-280?width=280&height=280&aspect=true" alt="" srcset="">
+                      <div class="card-body">
+                          <p class="card-text">Castillo De Molina
+                              Vino Carmenere botella 750 cc</p>
+                          <p class="text-danger">$8.650</p>
+                          <div class="d-grid gap-2">
+                              <button class="btn btn-primary" type="button" onclick="comprar(21)">Comprar</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="col">
+                  <div class="card shadow-sm"
+                      id="producto-22"
+                      data-img="https://santaisabel.vtexassets.com/arquivos/ids/270310-280-280?width=280&height=280&aspect=true"
+                      data-nombre="Bandeja Huevo"
+                      data-precio="$1.199"
+                  >
+                      <img class="bd-placeholder-img card-img-top" width="100" src="https://santaisabel.vtexassets.com/arquivos/ids/270310-280-280?width=280&height=280&aspect=true" alt="" srcset="">
+                      <div class="card-body">
+                          <p class="card-text">Costa
+                              Bandeja Huevo Colores</p>
+                          <p class="text-danger">$1.199/p>
+                          <div class="d-grid gap-2">
+                              <button class="btn btn-primary" type="button" onclick="comprar(22)">Comprar</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="col">
+                  <div class="card shadow-sm"
+                      id="producto-23"
+                      data-img="https://santaisabel.vtexassets.com/arquivos/ids/268493-280-280?width=280&height=280&aspect=true"
+                      data-nombre="Costillitas a la CL"
+                      data-precio="$6.790
+                      ($9.700 x kg)"
+                  >
+                      <img class="bd-placeholder-img card-img-top" width="100" src="https://santaisabel.vtexassets.com/arquivos/ids/268493-280-280?width=280&height=280&aspect=true" alt="" srcset="">
+                      <div class="card-body">
+                          <p class="card-text">Costillitas a la chilena Super Cerdo 700 g</p>
+                          <p class="text-danger">$6.790
+                              ($9.700 x kg)</p>
+                          <div class="d-grid gap-2">
+                              <button class="btn btn-primary" type="button" onclick="comprar(23)">Comprar</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="col">
+                  <div class="card shadow-sm"
+                      id="producto-24"
+                      data-img="https://santaisabel.vteximg.com.br/arquivos/ids/180810-280-280?width=280&height=280&aspect=true"
+                      data-nombre="Vivo Gelatina"
+                      data-precio="$869"
+                  >
+                      <img class="bd-placeholder-img card-img-top" width="100" src="https://santaisabel.vteximg.com.br/arquivos/ids/180810-280-280?width=280&height=280&aspect=true" alt="" srcset="">
+                      <div class="card-body">
+                          <p class="card-text">Vivo
+                              Gelatina sin azúcar naranja 22 g</p>
+                          <p class="text-danger">$869</p>
+                          <div class="d-grid gap-2">
+                              <button class="btn btn-primary" type="button" onclick="comprar(24)">Comprar</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="col">
+                  <div class="card shadow-sm"
+                      id="producto-25"
+                      data-img="https://santaisabel.vteximg.com.br/arquivos/ids/165116-280-280?width=280&height=280&aspect=true"
+                      data-nombre="Preservativo"
+                      data-precio="$2.392"
+                  >
+                      <img class="bd-placeholder-img card-img-top" width="100" src="https://santaisabel.vteximg.com.br/arquivos/ids/165116-280-280?width=280&height=280&aspect=true" alt="" srcset="">
+                      <div class="card-body">
+                          <p class="card-text">Preservativo de látex Stimula 3 un.</p>
+                          <p class="text-danger">$2.392</p>
+                          <div class="d-grid gap-2">
+                              <button class="btn btn-primary" type="button" onclick="comprar(25)">Comprar</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="col">
+                  <div class="card shadow-sm"
+                      id="producto-26"
+                      data-img="https://santaisabel.vteximg.com.br/arquivos/ids/164954-280-280?width=280&height=280&aspect=true"
+                      data-nombre="Suavizante"
+                      data-precio="$2.849"
+                  >
+                      <img class="bd-placeholder-img card-img-top" width="100" src="https://santaisabel.vteximg.com.br/arquivos/ids/164954-280-280?width=280&height=280&aspect=true" alt="" srcset="">
+                      <div class="card-body">
+                          <p class="card-text">Soft
+                              Suavizante Ropa Soft Classic 1 L</p>
+                          <p class="text-danger">$2.849</p>
+                          <div class="d-grid gap-2">
+                              <button class="btn btn-primary" type="button" onclick="comprar(26)">Comprar</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="col">
+                  <div class="card shadow-sm"                
+                      id="producto-27"
+                      data-img="https://santaisabel.vteximg.com.br/arquivos/ids/159728-280-280?width=280&height=280&aspect=true"
+                      data-nombre="Cereal Zucaritas"
+                      data-precio="$4.649"
+                  >
+                      <img class="bd-placeholder-img card-img-top" width="100px" src="https://santaisabel.vteximg.com.br/arquivos/ids/159728-280-280?width=280&height=280&aspect=true" alt="" srcset="">
+                      <div class="card-body">
+                          <p class="card-text">Cereal Zucaritas 480 g. 1 un.</p>
+                          <p class="text-danger">$4.649</p>
+                          <div class="d-grid gap-2">
+                              <button class="btn btn-primary" type="button" onclick="comprar(27)">Comprar</button>
+                          </div>
+                          
+                      </div>
+                  </div>
+              </div>
+              
+          </div>
+          </div>
+      </div>
+    </div>
+    
+
+
+    <div class="bg-dark py-2 custom-navbarbarranegra">        
+    </div>
+
+    <script src="js.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>  
+  
+
+    <script>
+
+        var array_productos = [];
+
+        if (localStorage.getItem('PRODUCTOS')) {
+            array_productos = JSON.parse(localStorage.getItem('PRODUCTOS')) || [];
+        }
+
+        function comprar(id) {
+            // alert(id);
+            var producto = $('#producto-' + id);
+
+            var p = {
+                id: id,
+                img: producto.data('img'),
+                nombre: producto.data('nombre'),
+                precio: producto.data('precio')
+            };
+
+            array_productos.push(p);
+
+            console.log(array_productos);
+
+            localStorage.setItem('PRODUCTOS', JSON.stringify(array_productos));
+
+            llenar_carrtio();
+        }
+
+        function llenar_carrtio() {
+            $('#carrito-producto').html('');   
+            var texto = '';
+            var total = 0;
+            array_productos.forEach(producto => {
+                // console.log(producto);
+                texto = texto + `
+                <tr>
+                  <td><img src="${producto.img}" width="50px"></td>
+                  <td>${producto.nombre}</td>
+                  <td>$${producto.precio}</td>
+                </tr>
+                `;
+
+                total += producto.precio;
+            });
+
+            $('#carrito-producto').append(texto);         
+            $('#carrito-precio').html(total);        
+        }
+    </script>
+
+</body>
+</html>
