@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>inicar sesion</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar sesión</title>
 
-    <link rel="stylesheet" href="css.css">
-    <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css.css">
+  <link rel="stylesheet" href="styles.css">
 
-
-    <style>
-      body {
-        background-color: #ff3333;
-      }
-    </style>
+  <style>
+    body {
+      background-color: #ff3333;
+    }
+  </style>
 </head>
 <body>
-
-  
   <div class="container">
     <div class="row justify-content-center mt-5">
       <div class="col-md-6">
@@ -27,14 +24,15 @@
             <h4 class="card-title">Iniciar sesión</h4>
           </div>
           <div class="card-body">
-            <form>
+            <form id="login-form">
               <div class="form-group">
                 <label for="usuario">Nombre de usuario</label>
-                <input type="text" class="form-control" id="usuario">
+                <input type="text" class="form-control" id="usuario" required>
               </div>
               <div class="form-group">
                 <label for="contraseña">Contraseña</label>
-                <input type="password" class="form-control" id="contraseña">
+                <input type="password" class="form-control" id="contraseña" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                <span class="validation-message">La contraseña debe tener al menos 8 caracteres, una letra mayúscula, una letra minúscula y un número.</span>
               </div>
               <div class="form-group form-check">
                 <input type="checkbox" class="form-check-input" id="recordar">
@@ -47,10 +45,17 @@
       </div>
     </div>
   </div>
-  
 
-    <script src="js.js">
+  <script>
+    document.getElementById('login-form').addEventListener('submit', function(event) {
+      var usuario = document.getElementById('usuario').value;
+      var contraseña = document.getElementById('contraseña').value;
 
-    </script>
+      if (usuario === '' || contraseña === '') {
+        event.preventDefault();
+        alert('Por favor, completa todos los campos.');
+      }
+    });
+  </script>
 </body>
 </html>
